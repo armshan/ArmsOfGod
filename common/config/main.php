@@ -5,6 +5,8 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'language'=>'zh-CN',//设置中文
+    'timeZone' => 'Asia/Shanghai',
     'components' => [
 //        'view' => [
 //            'theme' => [
