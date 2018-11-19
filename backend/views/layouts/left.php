@@ -35,6 +35,18 @@
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
+                        'label' => 'RBAC',
+                        'icon' => 'dashboard',
+                        'url' => '#',
+                        'items'=>[
+                            ['label' => '路由', 'icon' => 'dashboard', 'url' => ['/admin/route']],
+                            ['label' => '权限', 'icon' => 'dashboard', 'url' => ['/admin/permission']],
+                            ['label' => '角色', 'icon' => 'dashboard', 'url' => ['/admin/role']],
+                            ['label' => '分配', 'icon' => 'dashboard', 'url' => ['/admin/assignment']],
+                            ['label' => '菜单', 'icon' => 'dashboard', 'url' => ['/admin/menu']],
+                        ]
+                    ],
+                    [
                         'label' => 'Some tools',
                         'icon' => 'share',
                         'url' => '#',
