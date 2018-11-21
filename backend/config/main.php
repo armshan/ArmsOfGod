@@ -25,6 +25,7 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['/site/login'],
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [
@@ -51,6 +52,16 @@ return [
             'itemChildTable' => 'auth_item_child',
             'ruleTable' => 'auth_rule',
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'enableStrictParsing' => false,
+            'showScriptName' => false,
+            'suffix' => '',
+            'rules' => [
+                "<controller:\w+>/<id:\d+>"=>"<controller>/view",
+                "<controller:\w+>/<action:\w+>"=>"<controller>/<action>"
+            ],
+        ],
 /*        'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
@@ -61,7 +72,7 @@ return [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            'site/*',
+           // 'site/*',
             'admin/*',
         ]
     ],

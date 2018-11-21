@@ -39,7 +39,7 @@
                         'icon' => 'dashboard',
                         'url' => '#',
                         'items'=>[
-                            ['label' => '路由', 'icon' => 'dashboard', 'url' => ['/admin/route']],
+                            ['label' => '路由', 'icon' => 'flash', 'url' => ['/admin/route']],
                             ['label' => '权限', 'icon' => 'dashboard', 'url' => ['/admin/permission']],
                             ['label' => '角色', 'icon' => 'dashboard', 'url' => ['/admin/role']],
                             ['label' => '分配', 'icon' => 'dashboard', 'url' => ['/admin/assignment']],
