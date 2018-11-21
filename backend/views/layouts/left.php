@@ -30,6 +30,9 @@
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
+                    ['label' => '资料库', 'options' => ['class' => 'header']],
+                    ['label'=>'问题分类', 'icon'=>'dashboard', 'url'=>['problem-cate/index']],
+                    ['label'=>'问题内容', 'icon'=>'dashboard', 'url'=>['problem/index']],
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
